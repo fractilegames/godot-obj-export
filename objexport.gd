@@ -60,7 +60,7 @@ func save_mesh_to_obj(var mesh, var file_name, var object_name):
 			if has_n:
 				if not has_uv:
 					output += "/"
-				output += "/" + str(index_base + indices[i] + 1)
+				output += "/" + str(index_base + indices[i + 1])
 			
 			output += "\n"
 			
