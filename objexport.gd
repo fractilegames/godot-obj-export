@@ -23,7 +23,7 @@ func save_mesh_to_obj(var mesh, var file_name, var object_name):
 		var has_uv = false
 		if surface[ArrayMesh.ARRAY_TEX_UV] != null:
 			for uv in surface[ArrayMesh.ARRAY_TEX_UV]:
-				output += "vt " + str(uv.x) + " " + str(uv.y) + "\n"
+				output += "vt " + str(uv.x) + " " + str(1.0 - uv.y) + "\n"
 			has_uv = true
 		
 		var has_n = false
